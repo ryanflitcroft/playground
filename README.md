@@ -1,5 +1,24 @@
 # This repo has some practice for you!
 
+Steps to get these on your computer.
+1. Fork up at the top
+    ![](./fork.png)
+2. Clone down 
+    ![](./code.png)
+    ```
+    git clone 'your url from the fork'
+    ```
+3. To Validate it is there and then
+    ```
+    ls
+    ```  
+ 
+    ```
+        cd 'the file'
+    ``` 
+    ```
+    code .
+
 ## Exercies can be found in exercises.js
 ## Answers to the exercises can be found in solutions.js. You are encouraged to only view the solutions when you are stuck and googling a solution has not helped. 
 
