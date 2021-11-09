@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { insertIntoArray, removeFromArray } from '../functions.js';
+import { insertIntoArray, removeFromArray, concatArrays, sliceArray } from '../functions.js';
 
 
 const test = QUnit.test;
@@ -39,4 +39,23 @@ test('removeFromArray test: takes in an array and a value and removes that value
     expect.deepEqual(actual, expected);
 });
 
+test('concatArrays test: takes in an array and a value and removes that value from the array', (expect) => {
+    const fruits = ['kiwi', 'apple', 'banana'];
+    const vegetables = ['corn', 'beet', 'spinach'];
+    const expected = ['kiwi', 'apple', 'banana', 'corn', 'beet', 'spinach'];
+    
+    const actual = concatArrays(fruits, vegetables);
+
+    expect.deepEqual(actual, expected);
+});
+
+test('sliceArray test: takes in an array and a value and removes that value from the array', (expect) => {
+    const fruits = ['kiwi', 'apple', 'banana', 'orange', 'peach'];
+    
+    const expected = ['kiwi', 'apple'];
+    
+    const actual = sliceArray(fruits);
+
+    expect.deepEqual(actual, expected);
+});
 
